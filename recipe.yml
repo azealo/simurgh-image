@@ -84,6 +84,11 @@ stages:
     commands:
     - echo "\nActions=rescue;\n[Desktop Action rescue]\nName=Rescue Mode\nExec=blackbox-terminal -c /bin/bash\nIcon=com.raggesilver.BlackBox" >> /usr/share/applications/com.raggesilver.BlackBox.desktop
 
+  - name: fix-gdm-permissions-service
+    type: shell
+    commands:
+    - mkdir -p /usr/lib/systemd/system/multi-user.target.wants/
+    - ln -s /usr/lib/systemd/system/apx-vso-pico.service /usr/lib/systemd/system/multi-user.target.wants/
 
   - name: gnome-software-setup
     type: shell
