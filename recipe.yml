@@ -84,11 +84,6 @@ stages:
     commands:
     - echo "\nActions=rescue;\n[Desktop Action rescue]\nName=Rescue Mode\nExec=blackbox-terminal -c /bin/bash\nIcon=com.raggesilver.BlackBox" >> /usr/share/applications/com.raggesilver.BlackBox.desktop
 
-  - name: apx-vso-pico-shutdown-service
-    type: shell
-    commands:
-    - mkdir -p /etc/systemd/user/graphical-session.target.wants/
-    - ln -s /etc/systemd/user/apx-vso-pico.service /etc/systemd/user/graphical-session.target.wants/
 
   - name: gnome-software-setup
     type: shell
