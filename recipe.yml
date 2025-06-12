@@ -87,8 +87,8 @@ stages:
   - name: fix-gdm-permissions-service
     type: shell
     commands:
-    - mkdir -p /usr/lib/systemd/system/multi-user.target.wants/
-    - ln -s /usr/lib/systemd/system/apx-vso-pico.service /usr/lib/systemd/system/multi-user.target.wants/
+    - mkdir -p /etc/systemd/system/multi-user.target.wants/
+    - ln -s /usr/lib/systemd/system/fix-gdm-permissions.service /etc/systemd/system/multi-user.target.wants/
 
   - name: gnome-software-setup
     type: shell
