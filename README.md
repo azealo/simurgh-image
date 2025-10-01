@@ -1,6 +1,6 @@
-# Vanilla OS Desktop Image
+# Simurgh Desktop Image
 
-Containerfile for building a Vanilla OS Desktop image.
+Containerfile for building a Simurgh OS Desktop image.
 
 This image is based on top of [`vanillaos/core`](https://github.com/Vanilla-OS/core-image/pkgs/container/core) and offers the default
 Vanilla OS Desktop experience with GNOME.

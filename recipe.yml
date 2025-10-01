@@ -1,4 +1,4 @@
-name: Vanilla Desktop
+name: Simurgh Desktop
 id: desktop
 vibversion: 1.0.0
 
@@ -8,7 +8,7 @@ stages:
   addincludes: true
   singlelayer: false
   labels:
-    maintainer: Vanilla OS Contributors
+    maintainer: azealo
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
